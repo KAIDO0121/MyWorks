@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Key Detection</title>
+  <script type="text/javascript" src="http://www.cornify.com/js/cornify.js"></script>
+</head>
+<body>
+<script>
+    let logkey =  [];
+    let joined =  null;
+    const secretcode = 'mdfk';
+    document.onkeydown=function(e)
+    {
+      
+        logkey.push(e.key)
+        if(logkey.length>secretcode.length)
+        {logkey.shift()}
+        if(logkey.length === 4)
+        {
+           joined = logkey.join('')
+            if(joined === secretcode)
+            {cornify_add()}
+        }
+        console.log(logkey)
+  
+
+    }
+   
+   
+</script>
+</body>
+</html>
