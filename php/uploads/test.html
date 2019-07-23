@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+<script>
+  function test()
+  {
+
+      return this.x;
+  }
+var g=test.bind({x:1});
+
+  g();//输出的值为1
+ 
+  console.log(this)
+  </script>
+  
+</body>
+</html>
