@@ -1,0 +1,19 @@
+html{
+    font-size:62.5%
+}
+
+
+#movies img, #movie img{
+    width:15rem
+}
+
+#movies .col-md-3 .well{
+    height:25rem;
+   
+}
+
+#movies .col-md-3 img{
+    max-height: 18rem;
+    max-width: 14rem;
+}
+
