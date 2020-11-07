@@ -12,7 +12,7 @@
     initLightBox();
     initTyped();
     initBtnFile();
-    initMap();
+    //initMap();
     initHold();
     initCaptcha();
     initAjaxContactForm();
